@@ -14,9 +14,8 @@ struct node *display(struct node *);
 struct node *insert_beg(struct node *);
 struct node *insert_end(struct node *);
 struct node *insert_after(struct node *);
-//struct node *insert_before(struct node *);
 struct node *delete_beg(struct node *);
-struct node *delete_end(struct node *);
+struct node *delete_end(struct node *);  
 struct node *delete_after(struct node *);
 struct node *delete_list(struct node *);
 
