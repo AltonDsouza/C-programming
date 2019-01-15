@@ -13,7 +13,7 @@ main()
 		if(arr[i] == num)
 		{
 			pos = i;
-			while(pos <= j)
+			while(pos < j)
         		{
                 	//Shifting elements to the left
                 	arr[pos] = arr[pos+1];
