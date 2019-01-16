@@ -13,6 +13,6 @@ int printnos(int n)
 		printnos(n-1);
 		printf("%d ",n);
 	}
-	printf("\n");
+	//printf("\n");
 }
 
