@@ -170,11 +170,30 @@ struct node *delete(struct node *root)
 	else
 	{
 		//Deleting node with two child
-		//To be Added
+                psuc = cur;
+                suc = cur->right;
+                while(suc->left!=NULL)
+                {
+                        psuc = suc;
+                        suc = suc->left;
+                }
+                if(cur == psuc)
+                {
+                        suc->left = cur->left;
+                }
+                else
+                {
+                        suc->left = cur->left;
+                        suc->right = cur->right;
+                        psuc->left = suc->right;
+                }
+                ptr = suc;
+
 	}
 	if(parent->left == cur)
 		parent->left = ptr;
 	else
 		parent->right = ptr;
+	free(cur);
 	return root;
 }
