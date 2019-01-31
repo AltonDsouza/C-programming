@@ -50,9 +50,9 @@ main()
 	//When array1 is empty
 	 if(index_first==n1)
         {
-                while(index_second<n1)
+                while(index_second<n2)
                 {
-                        arr[index]=arr1[index_second];
+                        arr[index]=arr2[index_second];
                         index++;
                         index_second++;
                 }
